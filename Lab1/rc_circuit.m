@@ -9,7 +9,7 @@ N = length(t);
 %calculate the analytic solution
 v_analytic = exp(-t/(R*C));
 
-%create a vector of lenght N filled with zeros
+%create a vector of length N filled with zeros
 %used to store the numerical solution
 v_numerical = zeros(1,N);
 

@@ -1,6 +1,6 @@
 function [t, v_analytic, v_numerical] = falling_parachute_Q2(c,m,g,t1,t2,dt)
 
-%create the t vector from0 seconds to 12 seconds in steps of delta t
+%create the t vector from 0 seconds to 12 seconds in steps of delta t
 t = t1:dt:t2;
 
 %determine the length of the t vector (for later use);
@@ -10,7 +10,7 @@ N = length(t);
 v_analytic = g*m*(1-exp(-(c/m)*t))/c;
 
 %finite difference solution
-%create a vector of lenght N filled with zeros
+%create a vector of length N filled with zeros
 %used to store the numerical solution
 v_numerical = zeros(1,N);
 
