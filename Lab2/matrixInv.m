@@ -30,7 +30,7 @@ for i = 1:n
     % Ux = d -> solve x 
     [x] = backSub(U,d);
 
-    % set row = transformed identity matrix
+    % set col = transformed identity matrix
     Ainv(:,i) = x;
 
 end % end for 

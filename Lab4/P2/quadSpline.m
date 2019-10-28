@@ -1,5 +1,5 @@
 function [y] = quadSpline(xdata, ydata, x)
-%Will compute a quadradtic splines of data provided at given x value.
+%Will compute quadradtic splines between data provided at given x value.
 
 % Check for more than 1 data point (cannot fit curve to 1 point)
 if (length(xdata) > 1)
